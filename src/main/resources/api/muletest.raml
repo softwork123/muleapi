@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: muletest
+#%RAML 1.0
+/getOrderDetails:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"message : details fetched"}
+/createOrder:
+  post:
+    body:
+      application/json:
+        example:
+          {"id : 2"}
+    responses:
+      201:
+              body:
+                application/json:
+                  example:
+                    {"message : orderCreaated"}
